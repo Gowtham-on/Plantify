@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".homeScreen.PlantDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageDetailsId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_one_details" />
+
+        <ImageView
+            android:id="@+id/countImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="400dp"
+            android:layout_marginRight="28dp"
+            android:src="@drawable/search_view" />
+
+        <ImageView
+            android:id="@+id/blankBackground"
+            android:layout_width="190dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="385dp"
+            android:src="@color/white" />
+
+        <TextView
+            android:id="@+id/increseCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="383dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/reduceCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="380dp"
+            android:layout_marginRight="80dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/noOfCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="405dp"
+            android:layout_marginRight="48dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/customerReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Customer Reviews (0)"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:layout_alignBottom="@id/imageDetailsId"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/addToCartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/add_to_cart_background"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Add to Cart"
+            android:textColor="#247F28" />
+
+        <Button
+            android:id="@+id/plantDetailBuyNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_button_background"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Buy now"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

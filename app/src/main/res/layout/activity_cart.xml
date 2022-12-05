@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".paymentAndCart.CartActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewId"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <RelativeLayout
+               android:id="@+id/relativeOne"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+
+               <ImageView
+                   android:layout_width="400dp"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/cart_item_one" />
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="80dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="80dp"
+                   android:background="@color/white" />
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="90dp">
+
+                   <TextView
+                       android:id="@+id/minusBtnOne"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="-"
+                       android:textColor="@color/black"
+                       android:textSize="50dp" />
+
+                   <ImageView
+                       android:id="@+id/countBackgroundOne"
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="bottom"
+                       android:layout_marginLeft="5dp"
+                       android:layout_toRightOf="@id/minusBtnOne"
+                       android:src="@drawable/add_to_cart_background" />
+
+                   <TextView
+                       android:id="@+id/addBtnOne"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_toRightOf="@id/countBackground"
+                       android:text="+"
+                       android:textColor="@color/black"
+                       android:textSize="40dp" />
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/textCountNumberOne"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="115dp"
+                   android:layout_marginRight="43dp"
+                   android:text="1"
+                   android:textColor="@color/black"
+                   android:textSize="20dp"
+                   android:textStyle="bold" />
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:id="@+id/relativeTwo"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+
+               <ImageView
+                   android:layout_width="400dp"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/cart_item_two" />
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="80dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="80dp"
+                   android:background="@color/white" />
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="90dp">
+
+                   <TextView
+                       android:id="@+id/minusBtnTwo"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="-"
+                       android:textColor="@color/black"
+                       android:textSize="50dp" />
+
+                   <ImageView
+                       android:id="@+id/countBackgroundTwo"
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="bottom"
+                       android:layout_marginLeft="5dp"
+                       android:layout_toRightOf="@id/minusBtnTwo"
+                       android:src="@drawable/add_to_cart_background" />
+
+                   <TextView
+                       android:id="@+id/addBtnTwo"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_toRightOf="@id/countBackground"
+                       android:text="+"
+                       android:textColor="@color/black"
+                       android:textSize="40dp" />
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/textCountNumberTwo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="115dp"
+                   android:layout_marginRight="43dp"
+                   android:text="1"
+                   android:textColor="@color/black"
+                   android:textSize="20dp"
+                   android:textStyle="bold" />
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:id="@+id/relativeThree"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+
+               <ImageView
+                   android:layout_width="400dp"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/cart_item_one" />
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="80dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="80dp"
+                   android:background="@color/white" />
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="90dp">
+
+                   <TextView
+                       android:id="@+id/minusBtnThree"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="-"
+                       android:textColor="@color/black"
+                       android:textSize="50dp" />
+
+                   <ImageView
+                       android:id="@+id/countBackground"
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="bottom"
+                       android:layout_marginLeft="5dp"
+                       android:layout_toRightOf="@id/minusBtnThree"
+                       android:src="@drawable/add_to_cart_background" />
+
+                   <TextView
+                       android:id="@+id/addBtnThree"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_toRightOf="@id/countBackground"
+                       android:text="+"
+                       android:textColor="@color/black"
+                       android:textSize="40dp" />
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/textCountNumberThree"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="115dp"
+                   android:layout_marginRight="43dp"
+                   android:text="1"
+                   android:textColor="@color/black"
+                   android:textSize="20dp"
+                   android:textStyle="bold" />
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:id="@+id/relativeFour"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+
+               <ImageView
+                   android:layout_width="400dp"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/cart_item_four" />
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="80dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="80dp"
+                   android:background="@color/white" />
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="90dp">
+
+                   <TextView
+                       android:id="@+id/minusBtnFour"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="-"
+                       android:textColor="@color/black"
+                       android:textSize="50dp" />
+
+                   <ImageView
+                       android:id="@+id/countBackgroundFour"
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="bottom"
+                       android:layout_marginLeft="5dp"
+                       android:layout_toRightOf="@id/minusBtnFour"
+                       android:src="@drawable/add_to_cart_background" />
+
+                   <TextView
+                       android:id="@+id/addBtnFour"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_toRightOf="@id/countBackground"
+                       android:text="+"
+                       android:textColor="@color/black"
+                       android:textSize="40dp" />
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/textCountNumberFour"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="115dp"
+                   android:layout_marginRight="43dp"
+                   android:text="1"
+                   android:textColor="@color/black"
+                   android:textSize="20dp"
+                   android:textStyle="bold" />
+
+           </RelativeLayout>
+       </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLinearLayout"
+        android:layout_below="@id/scrollViewId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/scrollViewId">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Order summary"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Total MRP"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvMRP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="₹240" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Discount on MRP"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="-₹80" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Taxes"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvTaxes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="₹20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Total amount"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:id="@+id/tvTotalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="₹20"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="20dp">
+
+        <Button
+            android:id="@+id/checkOutCartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/raleway_bold"
+            android:background="@drawable/login_button_background"
+            android:text="Proceed to checkout"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

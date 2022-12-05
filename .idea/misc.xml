@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/add_to_cart_background.xml" value="0.176" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/arrow_forward.xml" value="0.1" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/barcode_box.xml" value="0.108" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/barcode_vector.xml" value="0.108" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/card_view_one.xml" value="0.107" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/card_view_two.xml" value="0.107" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/cart_vector.xml" value="0.1485" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/gradient_background.xml" value="0.107" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/gradient_background_two.xml" value="0.107" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/ic_launcher_background.xml" value="0.184" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/line_vector.xml" value="0.108" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/login_button_background.xml" value="0.1445" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/search_view.xml" value="0.12" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/signup_button_background.xml" value="0.107" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/drawable/twitter_background.xml" value="0.1485" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/action_bar_layout.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/activity_cart.xml" value="0.22" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/activity_checkout.xml" value="0.22" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/activity_first_screen.xml" value="0.1" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/activity_home.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/activity_location.xml" value="0.16666666666666666" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/activity_login_screen.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/activity_payment.xml" value="0.16666666666666666" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/activity_plant_details.xml" value="0.16666666666666666" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/activity_second_screen.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/activity_signup_screen.xml" value="0.22" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/fragment_about_app.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/fragment_history.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/fragment_home.xml" value="0.16666666666666666" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/fragment_location.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/fragment_more.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/fragment_notification.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/fragment_offer.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/fragment_plants.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/fragment_security.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/fragment_social.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/home_recycler_layout.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/layout/nav_header.xml" value="0.16666666666666666" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/menu/activity_main_drawer.xml" value="0.16666666666666666" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/menu/home.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/menu/nav_drawer_menu.xml" value="0.17552083333333332" />
+        <entry key="..\:/Gowtham ON/TestOne/app/src/main/res/menu/nav_header_menu.xml" value="0.17552083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

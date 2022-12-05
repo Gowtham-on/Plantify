@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_nav"
+            android:icon="@drawable/home_nav"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/location_nav"
+            android:icon="@drawable/location_vector"
+            android:title="@string/location" />
+        <item
+            android:id="@+id/purchase_nav"
+            android:icon="@drawable/purchase_vector"
+            android:title="@string/purchase_history" />
+        <item
+            android:id="@+id/about_app_nav"
+            android:icon="@drawable/info_vector"
+            android:title="@string/aboutApp" />
+
+        <item
+            android:id="@+id/notification_nav"
+            android:icon="@drawable/notification_vector"
+            android:title="@string/notification" />
+        <item
+            android:id="@+id/offer_nav"
+            android:icon="@drawable/latest_offer_vector"
+            android:title="@string/latest_offer" />
+        <item
+            android:id="@+id/security_nav"
+            android:icon="@drawable/security_vector"
+            android:title="@string/security" />
+        <item
+            android:id="@+id/more_nav"
+            android:icon="@drawable/more_vector"
+            android:title="More" />
+    </group>
+
+    <item android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/logout_nav"
+                android:icon="@drawable/logout_vector"
+                android:title="Log Out" />
+        </menu>
+
+    </item>
+
+</menu>

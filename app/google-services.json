@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "277661593641",
+    "project_id": "testone-30aa2",
+    "storage_bucket": "testone-30aa2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277661593641:android:c1196f1843f995faa5ac38",
+        "android_client_info": {
+          "package_name": "com.project.testone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277661593641-orchti9tp880v99h95mspbk30t929bcn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.testone",
+            "certificate_hash": "525cc9ad116260d8f7bacf909b28542ec2436faf"
+          }
+        },
+        {
+          "client_id": "277661593641-8if7nqqee4ae647mfdbla2blfsu70oab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj1VBAbfcQLLP9N161XFAIxyE0V1iIcWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277661593641-8if7nqqee4ae647mfdbla2blfsu70oab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

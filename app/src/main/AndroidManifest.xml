@@ -12,13 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestOne">
         <activity
+            android:name=".fragments.bottom_nav_fragments.ChatScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".paymentAndCart.CheckoutActivity"
             android:exported="false" />
         <activity
             android:name=".paymentAndCart.PaymentActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".paymentAndCart.CartActivity"
             android:exported="false" />
@@ -36,7 +37,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".infoAndLoginScreens.LocationActivity"

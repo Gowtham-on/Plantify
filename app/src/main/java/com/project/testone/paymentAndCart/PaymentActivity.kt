@@ -71,7 +71,7 @@ class PaymentActivity : AppCompatActivity() {
             var uri: Uri? = Uri.Builder()
                 .scheme("upi")
                 .authority("pay")
-                .appendQueryParameter("pa", "ongowtham6@okicici")
+                .appendQueryParameter("pa", "sounderjanani@oksbi")
                 .appendQueryParameter("pn", "Gowtham")
                 .appendQueryParameter("mc", "1234")
                 .appendQueryParameter("tr", "123456789")

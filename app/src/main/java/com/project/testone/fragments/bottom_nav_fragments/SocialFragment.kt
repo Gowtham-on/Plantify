@@ -1,5 +1,6 @@
 package com.project.testone.fragments.bottom_nav_fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -22,22 +23,32 @@ class SocialFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         firstLayout.setOnClickListener {
-            Toast.makeText(context?.applicationContext, "No user called ${userNameOne.text}", Toast.LENGTH_SHORT).show()
+            var intent = Intent(requireContext().applicationContext, ChatScreenActivity::class.java)
+            intent.putExtra("userName", "Natalia")
+            startActivity(intent)
         }
 
         secondLayout.setOnClickListener {
-            Toast.makeText(context?.applicationContext, "No user called ${userNameTwo.text}", Toast.LENGTH_SHORT).show()
+            var intent = Intent(requireContext().applicationContext, ChatScreenActivity::class.java)
+            intent.putExtra("userName", "Joe Agnes")
+            startActivity(intent)
         }
         thirdLayout.setOnClickListener {
-            Toast.makeText(context?.applicationContext, "No user called ${userNameThree.text}", Toast.LENGTH_SHORT).show()
+            var intent = Intent(requireContext().applicationContext, ChatScreenActivity::class.java)
+            intent.putExtra("userName", "Hems Dharu")
+            startActivity(intent)
         }
 
         fourthLayout.setOnClickListener {
-            Toast.makeText(context?.applicationContext, "No user called ${userNameFour.text}", Toast.LENGTH_SHORT).show()
+            var intent = Intent(requireContext().applicationContext, ChatScreenActivity::class.java)
+            intent.putExtra("userName", "John")
+            startActivity(intent)
         }
 
         fifthLayout.setOnClickListener {
-            Toast.makeText(context?.applicationContext, "No user called ${userNameFive.text}", Toast.LENGTH_SHORT).show()
+            var intent = Intent(requireContext().applicationContext, ChatScreenActivity::class.java)
+            intent.putExtra("userName", "Sweety Nisha")
+            startActivity(intent)
         }
     }
 }

@@ -3,14 +3,17 @@ package com.project.testone.paymentAndCart
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.view.WindowManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.project.testone.R
+import kotlinx.android.synthetic.main.action_bar_layout.*
 import kotlinx.android.synthetic.main.activity_payment.*
 
 
@@ -24,7 +27,13 @@ class PaymentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment)
 
-        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
+
+        supportActionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+        supportActionBar?.setCustomView(R.layout.action_bar_layout)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true);
+
+        cartBtn.visibility = View.GONE
 
         val dropdown = findViewById<Spinner>(R.id.paymentMethodSpinner)
         val items = arrayOf("Add a banking account", "Google Pay")
@@ -52,7 +61,6 @@ class PaymentActivity : AppCompatActivity() {
                     lineTwo.visibility = View.VISIBLE
                 }
             }
-
         }
 
         var mrp = intent.getStringExtra("mrp")
@@ -71,8 +79,8 @@ class PaymentActivity : AppCompatActivity() {
             var uri: Uri? = Uri.Builder()
                 .scheme("upi")
                 .authority("pay")
-                .appendQueryParameter("pa", "sounderjanani@oksbi")
-                .appendQueryParameter("pn", "Gowtham")
+                .appendQueryParameter("pa", "soundarjanani1234@oksbi")
+                .appendQueryParameter("pn", "Janani")
                 .appendQueryParameter("mc", "1234")
                 .appendQueryParameter("tr", "123456789")
                 .appendQueryParameter("am", total)
@@ -113,5 +121,14 @@ class PaymentActivity : AppCompatActivity() {
                 Toast.makeText(this, "App not available", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

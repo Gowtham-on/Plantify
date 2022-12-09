@@ -3,13 +3,16 @@ package com.project.testone.paymentAndCart
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.project.testone.R
 import com.project.testone.dataClass.User
+import kotlinx.android.synthetic.main.action_bar_layout.*
 import kotlinx.android.synthetic.main.activity_cart.*
 
 class CartActivity : AppCompatActivity() {
@@ -27,6 +30,11 @@ class CartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cart)
 
+
+        supportActionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+        supportActionBar?.setCustomView(R.layout.action_bar_layout)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true);
+
         auth = FirebaseAuth.getInstance()
         firebaseDatabase = FirebaseDatabase.getInstance()
 
@@ -34,6 +42,7 @@ class CartActivity : AppCompatActivity() {
 
         getData()
 
+        cartBtn.visibility = View.GONE
         addBtnOne.setOnClickListener {
             plantOneCount += 1
             increaseData("plantOne", plantOneCount.toString())
@@ -146,6 +155,16 @@ class CartActivity : AppCompatActivity() {
 
         databaseReference!!.updateChildren(hashMap as Map<String, Any>)
         getData()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
 

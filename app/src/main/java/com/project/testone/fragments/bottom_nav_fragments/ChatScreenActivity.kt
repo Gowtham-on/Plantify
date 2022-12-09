@@ -1,8 +1,12 @@
 package com.project.testone.fragments.bottom_nav_fragments
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -25,9 +29,13 @@ class ChatScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat_screen)
 
-        supportActionBar!!.hide()
         userName = intent.getStringExtra("userName").toString()
-        tvUserName.text = userName
+//        tvUserName.text = userName
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true);
+        supportActionBar?.title = userName
+        supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.parseColor("#E7F0E7")))
+        window.statusBarColor = Color.parseColor("#247F28")
 
         Toast.makeText(this, userName, Toast.LENGTH_SHORT).show()
 
@@ -92,5 +100,14 @@ class ChatScreenActivity : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

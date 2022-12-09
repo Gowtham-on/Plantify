@@ -2,6 +2,7 @@ package com.project.testone.homeScreen
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
@@ -12,6 +13,7 @@ import com.google.firebase.database.*
 import com.project.testone.R
 import com.project.testone.dataClass.User
 import com.project.testone.paymentAndCart.CartActivity
+import kotlinx.android.synthetic.main.action_bar_layout.*
 import kotlinx.android.synthetic.main.activity_plant_details.*
 
 class PlantDetailsActivity : AppCompatActivity() {
@@ -30,10 +32,10 @@ class PlantDetailsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_plant_details)
 
 
-
         supportActionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
         supportActionBar?.setCustomView(R.layout.action_bar_layout)
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
+
 
         auth = FirebaseAuth.getInstance()
         firebaseDatabase = FirebaseDatabase.getInstance()
@@ -95,7 +97,11 @@ class PlantDetailsActivity : AppCompatActivity() {
                 plantOne += 1
                 noOfCount.text = plantOne.toString()
             }
+        }
 
+        cartBtn.setOnClickListener {
+            var intent = Intent(this, CartActivity::class.java)
+            startActivity(intent)
         }
 
         reduceCount.setOnClickListener {
@@ -176,5 +182,15 @@ class PlantDetailsActivity : AppCompatActivity() {
 
             }
         })
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
